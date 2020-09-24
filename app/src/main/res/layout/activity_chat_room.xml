@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatRoomActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_above="@id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler"/>
+    <RelativeLayout
+
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_edittext"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:elevation="5dp"
+            android:textSize="16dp"
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type a message"
+            android:layout_toLeftOf="@+id/send"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_margin="5dp"
+            app:elevation="5dp"
+            android:id="@+id/send"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:src="@drawable/ic_baseline_send_24"
+            />
+    </RelativeLayout>
+</RelativeLayout>

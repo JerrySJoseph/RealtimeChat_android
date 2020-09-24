@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lets Get Started!"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="20dp"/>
+
+
+   <EditText
+       android:id="@+id/name"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:inputType="text"
+       android:padding="10dp"
+       android:gravity="center"
+       android:drawableLeft="@drawable/ic_user"
+       android:drawableTint="@color/colorPrimary"
+       android:background="@drawable/bg_edittext"
+       android:hint="Type Your name"
+       android:layout_margin="10dp"
+       />
+    <EditText
+        android:id="@+id/room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:padding="10dp"
+        android:gravity="center"
+        android:drawableLeft="@drawable/ic_room"
+        android:drawableTint="@color/colorPrimary"
+        android:background="@drawable/bg_edittext"
+        android:hint="Room ID"
+        android:layout_margin="10dp"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_btn"
+        android:textColor="@android:color/white"
+        android:text="Enter Chat Room"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/socket"/>
+</LinearLayout>
