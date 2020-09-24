@@ -1,10 +1,12 @@
 package com.jstechnologies.realtimechat20;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -100,6 +102,14 @@ public class ChatRoomActivity extends AppCompatActivity {
         //    Toast.makeText(getApplicationContext(),"Sending",Toast.LENGTH_LONG).show();
         }
     };
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()==android.R.id.home)
+            finish();
+        return super.onOptionsItemSelected(item);
+    }
+
     @Override
     protected void onDestroy() {
         super.onDestroy();
